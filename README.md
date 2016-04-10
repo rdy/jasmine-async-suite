@@ -10,21 +10,21 @@ For example the following async test:
     });
   }
 
-  it('passes when enough time has passed, function(done) {
+  it('passes when enough time has passed', function(done) {
     timeout().then(done);
   });    
 ```
 
 Becomes:
 ```js
-  it.async('passes when enough time has passed, function() {
+  it.async('passes when enough time has passed', function() {
     return timeout();  
   });    
 ```
 
 It works and looks even better with the proposed ES7 async/await syntax
 ```js
-  it.async('passes when enough time has passed, async function() {
+  it.async('passes when enough time has passed', async function() {
     await timeout();  
   });    
 ```
