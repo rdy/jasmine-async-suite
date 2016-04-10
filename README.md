@@ -10,7 +10,7 @@ jasmineAsync.install();
 
 Uninstalling:
 ```js
-afterEach(function() {
+afterAll(function() {
   var jasmineAsync = require('jasmine-async-suite');
   jasmineAsync.uninstall();
 });
