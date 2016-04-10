@@ -2,6 +2,20 @@
 
 Adds async function to jasmine suite function that expect promises for asynchronous tests.
 
+To install:
+```js
+var jasmineAsync = require('jasmine-async-suite');
+jasmineAsync.install();
+```
+
+Uninstalling:
+```js
+afterEach(function() {
+  var jasmineAsync = require('jasmine-async-suite');
+  jasmineAsync.uninstall();
+});
+```
+
 For example the following async test:
 ```js
   function timeout() {
