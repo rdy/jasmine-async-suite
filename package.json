@@ -1,10 +1,9 @@
 {
   "name": "jasmine-async-suite",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Adds async function to jasmine suite function that expect promises for asynchronous tests",
   "main": "index.js",
-  "scripts": {
-  },
+  "scripts": {},
   "author": "ryan.dy@gmail.com",
   "license": "ISC",
   "devDependencies": {
