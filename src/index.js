@@ -12,7 +12,7 @@ function withAsync(fns) {
       (fns[name])(...args, done => {
         const promise = this::callback();
         invariant(promise instanceof Promise, `${name} must return a promise!`);
-        promise.then(done);
+        promise.then(done, done.fail);
       });
     };
     return memo;
