@@ -4,10 +4,14 @@
   "description": "Adds async function to jasmine suite function that expect promises for asynchronous tests",
   "main": "index.js",
   "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rdy/jasmine-async-suite.git"
+  },
   "author": "ryan.dy@gmail.com",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
-    "babel": "^6.5.2",
+    "babel-cli": "^6.11.4",
     "babel-core": "^6.7.6",
     "babel-eslint": "^6.0.2",
     "babel-plugin-transform-object-rest-spread": "^6.6.5",

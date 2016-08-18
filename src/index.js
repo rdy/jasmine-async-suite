@@ -9,7 +9,7 @@ function withAsync(fns) {
     memo[name].async = function(...args) {
       const callback = args.pop();
       invariant(isFunction(callback), `${name} must be provided a function!`);
-      (fns[name])(...args, done => {
+      return (fns[name])(...args, done => {
         const promise = this::callback();
         invariant(promise instanceof Promise, `${name} must return a promise!`);
         promise.then(done, done.fail);
