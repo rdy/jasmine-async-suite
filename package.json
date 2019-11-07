@@ -21,7 +21,7 @@
     "babel-preset-es2015-loose": "^7.0.0",
     "babel-preset-stage-0": "^6.5.0",
     "del": "^2.2.0",
-    "foreman": "^1.4.1",
+    "foreman": "^3.0.1",
     "gulp": "^3.9.1",
     "gulp-babel": "^6.1.2",
     "gulp-eslint": "^2.0.0",
